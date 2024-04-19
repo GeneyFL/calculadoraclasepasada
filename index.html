@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sumador de Numeros</title>
+    </head>
+
+<body>
+
+    <h1>Sumador de Numeros</h1>
+
+    <label for="num1">Numero 1:</label>
+    <input type="number" id="num1">
+
+    <label for="num1">Numero 2:</label>
+    <input type="number" id="num2">
+
+    <button onclick="sumar()">sumar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function sumar() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+           // numero y lo convierte a un numero de punto flotante
+            var num2 = parseFloat(document.getElementById('num2').value);
+           // numero y lo convierte a un numero de punto flotante
+            
+            var resultado = num1 + num2;
+
+            document.getElementById('resultado').innerText = "El resultado de la suma es : " + resultado;
+        }
+    </script>
+
+
+
+<h1> calificaciones de los ultimos 3 periodos</h1>
+
+<label for="num5">Numero 5:</label>
+<input type="number" id="num5">
+
+<label for="num6">Numero 6:</label>
+<input type="number" id="num6">
+
+<label for="num7">Numero 7:</label>
+<input type="number" id="num7">
+
+<button onclick="calificacion()">calificacion</button>
+
+<p id="resultado3"></p>
+
+<script>
+    function calificacion() {
+        var num5 = parseFloat(document.getElementById('num5').value);
+       // numero y lo convierte a un numero de punto flotante
+        var num6 = parseFloat(document.getElementById('num6').value);
+       // numero y lo convierte a un numero de punto flotante
+       var num7 = parseFloat(document.getElementById('num7').value); 
+
+        var resultado3 = (num5 + num6 + num7)/3;
+
+        document.getElementById('resultado3').innerText = "El resultado de la multiplicacion es : " + resultado3;
+    }
+
+</script>
+
+
+
+<h1>Restador de Numeros</h1>
+
+<label for="num3">Numero 3:</label>
+<input type="number3" id="num3">
+
+<label for="num4">Numero 4:</label>
+<input type="number4" id="num4">
+
+<button onclick="restar()">restar</button>
+
+<p id="resultado2"></p>
+
+<script>
+    function restar() {
+        var num1 = parseFloat(document.getElementById('num3').value);
+       // numero y lo convierte a un numero de punto flotante
+        var num2 = parseFloat(document.getElementById('num4').value);
+       // numero y lo convierte a un numero de punto flotante
+        
+        var resultado2 = num1 - num2;
+
+        document.getElementById('resultado2').innerText = "El resultado de la resta es : " + resultado2;
+    }
+
+</script>
+</body>
+</html>
